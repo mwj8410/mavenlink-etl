@@ -1,0 +1,44 @@
+{
+  "name": "trh-mavenlink-etl",
+  "private": true,
+  "version": "0.0.1",
+  "description": "TreeHouse Integrations: Mavenlink ETL",
+  "dependencies": {
+    "moment": "2.17.1",
+    "request": "2.79.0"
+  },
+  "engines": {
+    "node": "6.x",
+    "npm": "3.x"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/@treehouse/guidelines/.eslintrc.js"
+    ],
+    "rules": {
+      "no-undef": 0,
+      "spaced-comment": [
+        2,
+        "always",
+        {
+          "exceptions": [
+            "*"
+          ]
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "start": "node ./app/etl"
+  },
+  "main": "etl.js",
+  "repository": "treehouseaustin/trh-mavenlink-etl",
+  "devDependencies": {
+    "@treehouse/guidelines": "^1.0.1",
+    "eslint": "3.1.1",
+    "expect": "1.20.2",
+    "mocha": "3.1.0",
+    "sinon": "1.17.4",
+    "supertest": "1.2.0"
+  }
+}
